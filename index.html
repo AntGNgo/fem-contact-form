@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="name">
+      <div class="input-container">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name">
+      </div>
+      <div class="input-container">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name">
+      </div>
+    </div>
+    <label for="email">Email Address</label>
+    <input type="email" id="email">
+    <div class="input-container">
+      <p>Query Type</p>
+      <div class="queries">
+        <div class="query general-query">
+          <input type="radio" name="query-type" id="general-query">
+          <label for="general-query">General Enquiry</label>
+        </div>
+        <div class="query support-query">
+          <input type="radio" name="query-type" id="support-query">
+          <label for="support-query">Support Query</label>
+        </div>
+
+      </div>
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+    <div class="consent-container">
+      <input type="checkbox" name="consent" id="consent">
+      <label for="consent">I consent to being contacted by the team</label>
+    </div>
+    <button>Submit</button>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Anthony Ngo</a>.
+  </div>
+</body>
+
+</html>

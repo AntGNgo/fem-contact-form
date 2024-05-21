@@ -13,6 +13,7 @@
 body {
 	font-family: 'Karla';
 	background-color: var(--light-green);
+	color: var(--dark-grey);
 	height: 100vh;
 	display: grid;
 	place-content: center;
@@ -40,12 +41,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	gap: 5px;
+	gap: 10px;
 }
 
 input[type='text'],
 input[type='email'] {
-	height: 25px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid var(--medium-grey);
 }
 
 .queries {
@@ -65,7 +68,7 @@ button {
 	color: var(--white);
 	background-color: var(--green);
 	height: 50px;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 16px;
 	border-radius: 10px;
 	outline: none;
@@ -74,8 +77,15 @@ button {
 
 textarea {
 	resize: none;
+	height: 70px;
+	border-radius: 5px;
+	border: 1px solid var(--medium-grey);
 }
 
 label {
 	font-size: 16px;
+}
+
+.req-input {
+	color: var(--green);
 }
